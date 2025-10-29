@@ -1,0 +1,145 @@
+/* Custom styles to complement Bootstrap */
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --success-color: #198754;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #0dcaf0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Login Page Enhancements */
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Dashboard Statistics Cards */
+.card-body i {
+  transition: transform 0.3s ease;
+}
+
+.card:hover i {
+  transform: scale(1.1);
+}
+
+/* Table Enhancements */
+.table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+/* Navbar Styling */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.navbar-brand i {
+  color: var(--warning-color);
+}
+
+/* Button Animations */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+footer {
+  margin-top: auto;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+/* Badge Styling */
+.badge {
+  padding: 0.5em 0.8em;
+  font-weight: 500;
+}
+
+/* Alert Styling */
+.alert {
+  border: none;
+  border-radius: 10px;
+}
+
+/* Form Control Focus */
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Card Header Custom */
+.card-header {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .display-5 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animation for page load */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeIn 0.5s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
